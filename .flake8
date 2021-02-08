@@ -1,2 +1,3 @@
 [flake8]
-select = E123/E133,E226,E241/E242
+ignore = E123/E133,E226,E241/E242
+max-line-length = 160
