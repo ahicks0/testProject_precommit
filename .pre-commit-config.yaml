@@ -8,3 +8,12 @@ repos:
     rev: v1.2.3
     hooks:
     - id: flake8
+-   repo: local
+    hooks:
+    -   id: pytest
+        name: pytest
+        entry: pytest test/ 
+        language: python
+        'types': [python]
+        pass_filenames: false
+        stages: [commit]
