@@ -12,8 +12,16 @@ repos:
     hooks:
     -   id: pytest
         name: pytest
-        entry: pytest test/ 
+        entry: coverage run --source=src/ -m pytest test/
         language: python
         'types': [python]
         pass_filenames: false
         stages: [commit]
+
+    -   id: coverage
+        name: coverage
+        entry: coverage report
+        language: python
+        'types': [ python ]
+        pass_filenames: false
+        stages: [ commit ]

@@ -10,8 +10,8 @@ class Personne:
     def incrementAge(self):
         self.age += 1
 
-    def rename(self, nEwNaMe):
-        self.name = nEwNaMe
+    def rename(self, newname):
+        self.name = newname
 
     def __repr__(self):
         return f"Nom : {self.name}, Age: {self.age}"
