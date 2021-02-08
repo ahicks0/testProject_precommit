@@ -14,8 +14,13 @@ class Personne:
         self.name = newname
 
     def __repr__(self):
+        age = 5
         return f"Nom : {self.name}, Age: {self.age}"
 
     def checkDate(self):
         if datetime.today().date() == self.birthday.date():
             self.incrementAge()
+
+    def NewMethod(self, arg):
+        print(arg)
+        # This code is never executed

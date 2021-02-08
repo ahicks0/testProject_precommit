@@ -33,3 +33,6 @@ class TestPersonne:
         assert notBirthday.age == 12
         notBirthday.checkDate()
         assert notBirthday.age == 12
+
+    def new(self):
+        pass
