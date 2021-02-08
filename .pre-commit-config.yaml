@@ -20,8 +20,8 @@ repos:
 
     -   id: coverage
         name: coverage
-        entry: coverage report
+        entry: coverage html
         language: python
         'types': [ python ]
         pass_filenames: false
-        stages: [ commit ]
+        stages: [commit]
