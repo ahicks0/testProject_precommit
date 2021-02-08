@@ -13,3 +13,8 @@ class TestPersonne:
     def test_Birthday(self, adulte):
         adulte.incrementAge()
         assert adulte.age == 46
+
+    def test_error(self, adulte):
+        adulte.rename("Jean")
+        with pytest.raises(AssertionError):
+            assert adulte.age == "Marc"
