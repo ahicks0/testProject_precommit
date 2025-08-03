@@ -4,7 +4,6 @@ from src.Personne import Personne
 if __name__ == "__main__":
     p = Personne("Pierre", 25, datetime.today())
     print(str(p))
-    print("test")
     print("my super titi branch")
     print("TEST DEV")
     exit(0)
